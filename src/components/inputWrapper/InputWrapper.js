@@ -1,6 +1,6 @@
 import React from "react";
 import './InputWrapper.css';
-import '../../../consts/Colors';
+
 
 class InputWrapper extends React.Component {
   constructor(props) {
