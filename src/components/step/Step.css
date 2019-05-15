@@ -1,0 +1,33 @@
+.step {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    color: #4a575f;
+}
+
+.step-name {
+    font-size: 15px;
+    color: white;
+}
+
+.circle {
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 3px solid #4a575f;
+    border-radius: 100%;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.orange .circle {
+    border-color: #ff4800;
+    color: white;
+}
+
+.number {
+    margin-bottom: 2px;
+}

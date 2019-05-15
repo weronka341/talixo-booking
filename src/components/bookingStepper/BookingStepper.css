@@ -1,0 +1,6 @@
+.step-list {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    margin-bottom: 20px;
+}

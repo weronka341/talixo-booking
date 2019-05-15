@@ -1,0 +1,19 @@
+.header {
+    background-color: #3f454d;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    line-height: 36px;
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-logo {
+    float: left;
+    height: 22px;
+}
