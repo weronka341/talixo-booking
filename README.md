@@ -1,11 +1,11 @@
-#Talixo booking
+# Talixo booking
 React.js app - form for booking taxis and limousines from Talixo.
 
-##Usage
-###`npm install`
+## Usage
+### `npm install`
 Install project dependencies.
 
-###`npm start`
+### `npm start`
 Runs the app in the development mode at localhost:3000
 
 ### `npm run build`
