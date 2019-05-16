@@ -1,3 +1,4 @@
+/* global google*/
 import React from "react";
 import './InputWrapper.css';
 
@@ -24,9 +25,19 @@ class InputWrapper extends React.Component {
                width='23' onClick={() => {
             this.showHelper()
           }}/>
-          {this.state.showHelper && <span className='help-text'>{this.props.text}</span>}
+          {this.state.showHelper && <span className='help-text'>{this.props.tip}</span>}
         </label>
+
+        <span className='location-selector'>
+          <img alt='Arrow' src={process.env.PUBLIC_URL + '/arrow.svg'} width='47' height='27'/>
+        </span>
+        <label className='input-description'>{this.props.text}</label>
+        <div className='input-wrapper'>
+          <input id={this.props.inputId} className='input-style'/>
+        </div>
       </div>
+
+
     );
   }
 }

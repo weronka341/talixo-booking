@@ -2,6 +2,10 @@
     height: 48px;
     position: relative;
     margin-bottom: 2px;
+    background: #ffffff;
+    color: #a8a8a8;
+    font-size: 19px;
+    border-radius: 3px;
 }
 
 .help-text-wrapper {
@@ -10,6 +14,7 @@
     left: 100%;
     z-index: 2;
 }
+
 .help-icon {
     cursor: pointer;
     position: absolute;
@@ -31,4 +36,37 @@
     padding: 12px 20px;
     width: 300px;
     font-size: 14px;
+}
+
+.input-description {
+    float:left;
+    padding: 9px 2px 9px 12px;
+}
+
+.location-selector {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    color: #ff4800;
+    position: static;
+    float: right;
+    height: 48px;
+    padding: 2px 0;
+    width: 48px;
+    right: 0;
+    border-left: 2px solid #cfcfcf;
+}
+
+.input-wrapper {
+    overflow: hidden;
+    height: 100%;
+}
+
+.input-style {
+    height: 48px;
+    width: 100%;
+    padding: 11px 12px 11px 4px;
+    border: none;
+    font-size: 19px;
+    color: #4c4c4c;
 }

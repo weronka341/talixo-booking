@@ -1,6 +1,24 @@
 .form-wrapper {
     float: left;
     padding-bottom: 20px;
-    width: 516px;
-    background-color: white;
+    width: 500px;
+}
+
+.date-picker-wrapper {
+    height: 48px;
+    position: relative;
+    margin-bottom: 2px;
+    background: #ffffff;
+    color: #a8a8a8;
+    font-size: 19px;
+    border-radius: 3px;
+}
+
+.date-picker {
+    height: 48px;
+    width: 100%;
+    padding: 11px 12px 11px 4px;
+    border: none;
+    font-size: 19px;
+    color: #4c4c4c;
 }
