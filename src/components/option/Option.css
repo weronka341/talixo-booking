@@ -1,0 +1,47 @@
+.select {
+    width: 100%;
+    appearance: none;
+    border: none;
+    font-size: 19px;
+    font-family: "Open Sans", sans-serif;
+    color: #4c4c4c;
+    background-color: white;
+    text-indent: 49%;
+}
+
+option {
+    padding-left: 20px;
+}
+
+.select-wrapper {
+    display: flex;
+    width: 100%;
+    margin: 2px;
+    height: 48px;
+    position: relative;
+    background-color: white;
+    font-size: 19px;
+    border-radius: 3px;
+}
+
+.location-selector {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    color: #ff4800;
+    position: static;
+    float: right;
+    height: 48px;
+    padding: 2px 0;
+    width: 48px;
+    right: 0;
+    border-left: 2px solid #cfcfcf;
+    border-radius: 3px;
+}
+
+.input-description {
+    width: 50%;
+    color: #a8a8a8;
+    float: left;
+    padding: 9px 2px 9px 12px;
+}

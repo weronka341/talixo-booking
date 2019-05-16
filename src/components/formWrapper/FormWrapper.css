@@ -2,9 +2,12 @@
     float: left;
     padding-bottom: 20px;
     width: 500px;
+    min-height: 390px;
 }
 
-.date-picker-wrapper {
+.field-wrapper {
+    display: flex;
+    width: 100%;
     height: 48px;
     position: relative;
     margin-bottom: 2px;
@@ -14,11 +17,50 @@
     border-radius: 3px;
 }
 
-.date-picker {
-    height: 48px;
+.input-style {
     width: 100%;
+    height: 48px;
     padding: 11px 12px 11px 4px;
     border: none;
     font-size: 19px;
+    font-family: "Open Sans", sans-serif;
     color: #4c4c4c;
+    border-radius: 3px;
+}
+
+.input-description {
+    float: left;
+    padding: 9px 2px 9px 12px;
+}
+
+.input-wrapper {
+    overflow: hidden;
+    height: 100%;
+}
+
+.info {
+    text-align: left;
+    font-size: 16px;
+    color: white;
+}
+
+.icon-holder {
+    float: right;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.booking-button {
+    width: 100%;
+    border-radius: 3px;
+    background-color: #ff4800;
+    padding: 12px 20px;
+    font-size: 26px;
+    font-weight: 400;
+    border: 4px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    float: right;
+    margin-top: 40px;
 }
