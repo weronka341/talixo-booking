@@ -29,7 +29,7 @@ class InputWrapper extends React.Component {
         <span className='location-selector'>
           <img alt='Arrow' src={process.env.PUBLIC_URL + '/arrow.svg'} width='47' height='27'/>
         </span>
-        <label className='input-description'>{this.props.text}</label>
+        <label className='location-input-description'>{this.props.text}</label>
         <div className='input-wrapper'>
           <input id={this.props.inputId} className='input-style' onChange={(e) => this.props.onChange(e)}/>
         </div>

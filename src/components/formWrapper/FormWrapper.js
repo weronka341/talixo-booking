@@ -1,10 +1,10 @@
 /* global google*/
 import React from 'react';
+import Script from 'react-load-script';
 import './FormWrapper.css';
 import InputWrapper from '../inputWrapper/InputWrapper';
-import Script from 'react-load-script';
-import 'react-day-picker/lib/style.css';
-import Option from "../option/Option";
+import Option from '../option/Option';
+import Checkbox from '../checkbox/Checkbox';
 
 
 class FormWrapper extends React.Component {
@@ -22,22 +22,20 @@ class FormWrapper extends React.Component {
       bigLuggage: 0,
       animals: 0,
       children: 0,
+      hours: 0,
     }
   }
 
   changeDate(e) {
     this.setState({date: e.target.value});
-    console.log(this.state.date);
   }
 
   changeTime(e) {
     this.setState({time: e.target.value});
-    console.log(this.state.time);
   }
 
   changeVoucherCode(e) {
     this.setState({voucherCode: e.target.value});
-    console.log(this.state.voucherCode);
   }
 
   changePlace(e) {
@@ -46,32 +44,30 @@ class FormWrapper extends React.Component {
     } else {
       this.setState({destinationAddress: e.target.value})
     }
-    console.log(this.state.pickUpAddress)
   };
 
   changePassengersNumber(e) {
     this.setState({passengers: e.target.value});
-    console.log(this.state.passengers);
   }
 
   changeBagsNumber(e) {
     this.setState({bags: e.target.value});
-    console.log(this.state.bags);
   }
 
   changeBigLuggageNumber(e) {
     this.setState({bigLuggage: e.target.value});
-    console.log(this.state.bigLuggage);
   }
 
   changeAnimalsNumber(e) {
     this.setState({animals: e.target.value});
-    console.log(this.state.animals);
   }
 
   changeChildrenSeatsNumber(e) {
     this.setState({children: e.target.value});
-    console.log(this.state.children);
+  }
+
+  changeBookingHours(e) {
+    this.setState({hours: e.target.value});
   }
 
   showOptions() {
@@ -86,6 +82,10 @@ class FormWrapper extends React.Component {
     }
     if (!destinationAddress.length) {
       alert('End point is required!');
+      return;
+    }
+    if(!date || !time) {
+      alert('Choose date and time!');
       return;
     }
     const today = new Date();
@@ -161,11 +161,12 @@ class FormWrapper extends React.Component {
           <Option selectId='1' counter='1' max='8' labelName='Passengers:'
                   onChange={(e) => this.changePassengersNumber(e)}/>
           <Option selectId='2' counter='0' max='8' labelName='Small bags:' onChange={(e) => this.changeBagsNumber(e)}/>
-          <Option selectId='1' counter='0' max='3' labelName='Big Luggage:'
+          <Option selectId='3' counter='0' max='3' labelName='Big Luggage:'
                   onChange={(e) => this.changeBigLuggageNumber(e)}/>
-          <Option selectId='2' counter='0' max='4' labelName='Animals:' onChange={(e) => this.changeAnimalsNumber(e)}/>
-          <Option selectId='1' counter='0' max='3' labelName='Children seats:'
+          <Option selectId='4' counter='0' max='4' labelName='Animals:' onChange={(e) => this.changeAnimalsNumber(e)}/>
+          <Option selectId='5' counter='0' max='3' labelName='Children seats:'
                   onChange={(e) => this.changeChildrenSeatsNumber(e)}/>
+          <Checkbox onChange={(e) => this.changeBookingHours(e)}/>
         </div>
         }
         <button className='booking-button' onClick={() => this.sendRequest()}>Start booking</button>
